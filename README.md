@@ -30,7 +30,7 @@ var value = dictionary.GetOrDefault(key); // returns value | default(TValue)
 
 ```
 
-## Avoid tedious NULL checks in your code
+## No need to perform tedious null checks in your code
 All methods are null-safe and accept null as input if called from code where non-initialized collections are possible, 
 e.g. there is no need to write checks to avoid crash on nulls.
 ```
