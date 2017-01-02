@@ -42,6 +42,7 @@ else
 {
   // do something useful
 }
+// Could we do any better?
 ```
 The behavior on input nulls is same as on empty sets - no action executed or empty enumerator is being returned.
 ```
