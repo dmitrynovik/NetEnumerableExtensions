@@ -31,7 +31,7 @@ Equivalent of List.ForEach, but accepts any enumerable
 ```
 
 ## No need to perform tedious null checks in your code
-All methods are null-safe and accept nulls as legit input, e.g. there is no need to write checks to prevent null reference exceptions
+Typical real world situation where input comes from anywhere and could be anything
 ```
 // 1000s null checks litter the code but are necessary to survive on unpredictable input
 if (something == null) 
@@ -44,6 +44,7 @@ else
 }
 // Could we do any better?
 ```
+All methods are null-safe and accept nulls as legit input, e.g. there is no need to write checks to prevent null reference exceptions
 The behavior on input nulls is same as on empty sets - no action executed or empty enumerator is being returned.
 ```
 ICollection<int> bugger = null;
