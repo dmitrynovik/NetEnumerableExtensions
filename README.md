@@ -44,7 +44,8 @@ else
 }
 // Could we do any better?
 ```
-All methods are null-safe and accept nulls as legit input, e.g. there is no need to write checks to prevent null reference exceptions
+All methods in this repository are null-safe and accept nulls as legit input, e.g. there is no need to write checks to prevent null reference exceptions.
+
 The behavior on input nulls is same as on empty sets - no action executed or empty enumerator is being returned.
 ```
 ICollection<int> bugger = null;
