@@ -34,7 +34,7 @@ var value = dictionary.GetOrDefault(key); // returns value | default(TValue)
 All methods are null-safe and accept null as input if called from code where non-initialized collections are possible, 
 e.g. there is no need to write checks to avoid crash on nulls.
 ```
-if (something == null)
+if (something == null) // litter!
 ```
 The behavior on input nulls is same as on empty sets - no action executed or empty enumerator is being returned.
 ```
