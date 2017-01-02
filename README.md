@@ -36,4 +36,12 @@ e.g. there is no need to write checks to avoid crash on nulls.
 ```
 if (something == null)
 ```
-The behavior on nulls is same as on empty sets - no action executed or empty enumerator is being returned.
+The behavior on input nulls is same as on empty sets - no action executed or empty enumerator is being returned.
+```
+ICollection<int> bugger = null;
+bugger.Each(x =>
+{
+    // This is safe 
+});
+
+```
