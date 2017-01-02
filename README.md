@@ -14,7 +14,7 @@ var set = items.ToHashSet();
 var concurrentQueue = queue.AsConcurrent();
 ```
 
-## Dictionaries: one line retrieval
+## Dictionaries: one line safe retrieval
 No need to call of .Contains(key) to prevent KeyNotFoundException. No need to do TryGetValue either - it takes a few lines. Get back NULL or any other default(TValue) if the key is missing in a single call - and in most cases that's exactly what you need
 ```
 var value = dictionary.GetOrDefault(key); // returns value | default(TValue)
