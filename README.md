@@ -34,6 +34,13 @@ Equivalent of List.ForEach, but accepts any enumerable
 All methods are null-safe and accept null as input, e.g. there is no need to write checks to avoid null reference exceptions
 ```
 if (something == null) // 1000s null checks litter the code but are necessary to survive on unpredictable input
+{
+   // bail
+}
+else
+{
+  // do something useful
+}
 ```
 The behavior on input nulls is same as on empty sets - no action executed or empty enumerator is being returned.
 ```
