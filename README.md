@@ -30,7 +30,7 @@ Equivalent of List.ForEach, but accepts any enumerable
 
 ```
 
-## No need to perform tedious null checks in your code
+## Finally, the extensions are null safe
 
 The .NET Framework implementation does not like NULLs. Most likely, you'll get an exception. Hence, checking the input becomes your routine  responsibility.
 
