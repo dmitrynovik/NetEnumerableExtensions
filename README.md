@@ -21,7 +21,7 @@ var value = dictionary.GetOrDefault(key); // returns value | default(TValue)
 ```
 
 ## Execute action on every item 
-
+Equivalent of List.ForEach, but accepts any enumerable
 ```
         collection.Each(x =>
         {
