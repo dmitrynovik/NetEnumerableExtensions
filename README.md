@@ -20,7 +20,7 @@ A simple one-liner:
 var value = dictionary.GetOrDefault(key); // returns value | default(TValue)
 ```
 
-## Each iterator
+## Each iterator on any enumerable (not just List<T>)
 
 ```
         collection.Each(x =>
