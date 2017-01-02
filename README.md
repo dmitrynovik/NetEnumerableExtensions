@@ -20,12 +20,12 @@ Avoid redundant call of .Contains(key) to prevent exception. Get back NULL or an
 var value = dictionary.GetOrDefault(key); // returns value | default(TValue)
 ```
 
-## Each iterator on any enumerable (not just List<T>)
+## Execute action on every item 
 
 ```
         collection.Each(x =>
         {
-            // Do something
+            // Do something with x
         });
 
 ```
