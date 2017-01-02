@@ -2,21 +2,32 @@
 
 This is a small set of enumerable extensions which, in my opinion, are very handy when working with enumerables and collections.
 
-## Quick conversions
+## Fluent conversions
 
 Convert your enumerable into Queue / Stack / Set (hash or sorted)
 ```
 var set = items.ToHashSet();
 ```
 
-## Quickly convert to thread-safe equivalent
+## Fluent conversions to thread-safe equivalent
 ```
 var concurrentQueue = queue.AsConcurrent();
 ```
 
-## No need to check if key is contained in the dictionary
+## No need to check if key is contained in the dictionary to prevent exception
+A simple one-liner:
 ```
 var value = dictionary.GetOrDefault(key); // returns value | default(TValue)
+```
+
+## Each iterator
+
+```
+        collection.Each(x =>
+        {
+            // Do something
+        });
+
 ```
 
 ## Avoid tedious NULL checks in your code
