@@ -4,7 +4,7 @@ This is a small set of enumerable extensions which, in my opinion, are handy whe
 
 ## Fluent conversions
 
-Convert your enumerable into more types than just Array or List
+One line conversions into more types than just Array or List
 ```
 var set = items.ToHashSet();
 ```
