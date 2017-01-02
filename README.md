@@ -39,9 +39,13 @@ if (something == null) // litter!
 The behavior on input nulls is same as on empty sets - no action executed or empty enumerator is being returned.
 ```
 ICollection<int> bugger = null;
+
 bugger.Each(x =>
 {
     // This is safe 
 });
+
+
+bugger.Filter(x => x > 5);  // This is safe 
 
 ```
