@@ -36,7 +36,7 @@ The .NET Framework implementation does not like NULLs. Most likely, you'll get a
 
 While having unitialized variables is a BAD idea, and NULL is a billion dollar design mistake, the typical real world situation where the input comes from anywhere and could be anything requires writing defensive code like this:
 ```
-// 1000s null checks litter the code but are necessary to survive on unpredictable input
+// Boilerplate begins
 if (something == null) 
 {
    // bail
@@ -45,9 +45,9 @@ else
 {
   // do something useful
 }
-// Could we do any better?
+// End of boilerplate
 ```
-All methods in this repository are null-safe and accept nulls as legit input, e.g. there is no need to write checks to prevent null reference exceptions.
+All above extensions are null-safe and accept nulls as legit input, e.g. there is no need to write checks to prevent null reference exceptions.
 
 The behavior on input nulls is same as on empty sets - no action executed or empty enumerator is being returned.
 ```
