@@ -15,7 +15,7 @@ var concurrentQueue = queue.AsConcurrent();
 ```
 
 ## Dictionaries: one line retrieval
-Avoid redundant call of .Contains(key) to prevent exception. Get back NULL or any other default(TValue) if the key is missing
+No need to call of .Contains(key) to prevent KeyNotFoundException. No need to do TryGetValue either - it takes a few lines. Get back NULL or any other default(TValue) if the key is missing
 ```
 var value = dictionary.GetOrDefault(key); // returns value | default(TValue)
 ```
