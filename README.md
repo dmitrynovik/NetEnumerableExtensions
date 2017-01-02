@@ -1,10 +1,10 @@
 # NetEnumerableExtensions
 
-This is a small set of enumerable extensions which, in my opinion, are very handy when working with enumerables and collections.
+This is a small set of enumerable extensions which, in my opinion, are handy when working with enumerables and collections to make your code more fluent and less boilerplate.
 
 ## Fluent conversions
 
-Convert your enumerable into Queue / Stack / Set (hash or sorted)
+Convert your enumerable into more types than just Array or List
 ```
 var set = items.ToHashSet();
 ```
@@ -14,8 +14,8 @@ var set = items.ToHashSet();
 var concurrentQueue = queue.AsConcurrent();
 ```
 
-## No need to check if key is contained in the dictionary to prevent exception
-A simple one-liner:
+## Dictionaries: one line retrieval
+Avoid redundant call of .Contains(key) to prevent exception
 ```
 var value = dictionary.GetOrDefault(key); // returns value | default(TValue)
 ```
