@@ -29,6 +29,10 @@ var value = dictionary.GetOrDefault(key); // returns value | default(TValue)
         });
 
 ```
+## Add range of items to any collection (not just List)
+```
+collection.AddMany(new[] { "X", "Y", "Z" });
+```
 
 ## No need to perform tedious null checks in your code
 All methods are null-safe and accept null as input if called from code where non-initialized collections are possible, 
