@@ -29,7 +29,7 @@ var value = dictionary.GetOrDefault(key); // returns value | default(TValue)
         });
 
 ```
-## Add range of items to any collection (not just List)
+## Add multiple to any collection (not just List)
 ```
 collection.AddMany(new[] { "X", "Y", "Z" });
 ```
