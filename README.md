@@ -34,7 +34,7 @@ Equivalent of List.ForEach, but accepts any enumerable
 
 The .NET Framework implementation does not like NULLs. Most likely, you'll get an exception. Hence, checking the input becomes your routine  responsibility.
 
-While having unitialized variables is a BAD idea, and NULL is a billion dollar design mistake, the typical real world situation where the input comes from anywhere and could be anything requires writing code like this:
+While having unitialized variables is a BAD idea, and NULL is a billion dollar design mistake, the typical real world situation where the input comes from anywhere and could be anything requires writing defensive code like this:
 ```
 // 1000s null checks litter the code but are necessary to survive on unpredictable input
 if (something == null) 
