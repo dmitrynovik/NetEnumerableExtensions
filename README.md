@@ -1,6 +1,6 @@
 # NetEnumerableExtensions
 
-This is a small set of enumerable extensions which, in my opinion, are handy when working with enumerables and collections to make code more fluent, less boilerplate.
+A set of enumerable extensions which are handy when working with enumerables and collections to make code more fluent, less boilerplate.
 
 ## Fluent conversions
 
